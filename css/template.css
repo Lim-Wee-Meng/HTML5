@@ -1,0 +1,391 @@
+* { 
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    align-self: center;
+    color:black;
+ }
+
+.partition {
+    color:black;
+}
+
+.navbar-header {
+    align-self: center;
+
+}
+#brandname {
+    vertical-align: middle;
+    font-size: 32px;
+    color:black;
+    
+}
+#blank-balance {
+    margin: 0 100px;
+}
+#navbar-header a {
+    color:black;
+    align-self:center;
+    vertical-align: middle;
+}
+
+#myNavbar {
+   display:flex;
+   justify-content:center;
+
+}
+#myNavbar a,li {
+    color:black;
+    font-size: small;
+    align-self:center;
+    text-decoration: none;
+}
+#collapsibleNavbar {
+    justify-content: center;
+}
+.nav-item:hover {
+    background-color: lightgrey;
+}
+
+#navbar-brand {
+    color:black;
+}
+#logo {
+    float:left;
+    width:64px;
+    height:64px;
+}
+
+.navbar {
+    display:flex;
+    align-self:center;
+ 
+}
+
+.hamburger {
+    display:none;
+}
+
+#left-foot {
+    flex-direction: row;
+    color: black;
+    width: fit-content;
+    float:left;
+}
+
+.nav-item a {
+    color:black;
+}
+
+#right-foot {
+    display: inline-flex;
+    align-self: center;
+    flex-direction: row;
+    margin:8px;
+    width:fit-content;
+    float: right;
+}
+.product-title {
+    margin:24px;
+}
+#mobile-left-foot {
+    display:none;
+    flex-direction: row;
+    color: black;
+    width: fit-content;
+    float:left;
+}
+
+/*JT's Product page */
+.col-lg-3 {
+    margin:16px 0px;
+}
+
+#productHeader {
+    text-align: center;
+}
+
+#modalImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#modalName {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.carousel-inner img {
+    display: block;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+.carousel-indicators {
+    filter: invert(1);
+}
+    /* styling for scroll to top button */
+.top-scrollerx {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    font-size: 1em;
+    display: none;
+    z-index: 999;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.35);
+    color: #fff;
+    line-height: 40px;
+
+}
+    .top-scrollerx:hover {
+    background: rgba(0,0,0,.6);
+}
+
+/* end of JT's product page */
+
+  /* Lina's codes for main page*/
+.jumbotron, .product-cards, .formsearch {
+    text-align: center;
+}
+
+ /* Add product page */
+.up-load-btn {
+    background-color: gray;
+} 
+
+.form-group {
+    padding:0px 16px;
+}
+#add-product {
+    display:flex;
+    justify-self: center;
+    width:100%;
+    height:800px;
+    overflow: scroll;
+}
+
+ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Contact Us */
+.contact-first-container {
+    display: flex;
+    flex-direction: row;
+    padding:24px;
+}
+#page-name {
+    text-align: center;
+    padding: 24px;
+}
+
+#add-product-container {
+    display:flex;
+
+   
+}
+#flex-container2  {
+    margin:3px 24px;
+    padding:8px;
+    justify-content: center;
+    border: thin solid rgb(49, 49, 49));
+    
+}
+#email-us a {
+    padding:8 px;
+    
+}
+
+#email-logo {
+    padding:0 0 0 24px;
+    width: 64px;
+    height:32px; 
+}
+
+
+#form-section {
+    padding:8px;
+}
+#product-image {
+    width:50%;
+}
+
+#product-image img {
+    width:100%;
+    height:auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: grey;
+    padding:8px;
+}
+
+
+#direction th,td {
+    font-size:12px;
+    padding:8px;
+}
+
+#tp-map {
+    width:50%;
+    
+}
+
+.map {
+    width:50%;
+    height:Auto;
+}
+#googleMap {
+    width:100%;
+    height:600px;
+}
+
+#info-box {
+    padding:32px;
+}
+
+#cart-status {
+    position:relative;
+    left:82%;
+  }
+  #cart-status img {
+    width:32px;
+    height:32px;
+  }
+
+  @media screen and (max-width: 700px) {
+
+        #logo {
+            width:32px;
+            height:32px;
+        }
+
+        .hamburger {
+            display:block;
+           
+        }
+        #mobile-left-foot {
+            display:inline-flex;
+            float:right;
+            vertical-align: center;
+            
+        }     
+        .partition,#left-foot {
+            display:none;
+        }
+        #right-foot img {
+            width:16px;
+            height:16px;
+        }
+        .nav-item a {
+            font-size: xx-small;
+            color:black;
+        }
+
+        #mobile-left-foot {
+            display:inline;
+            flex-direction: row;
+            color: black;
+            width: fit-content;
+            float:left;
+        }
+
+        #mobile-left-foot ul {
+            list-style: none;
+            padding:0;
+            margin:0;
+            display: flex;
+            float:left;
+        }
+
+        #mobile-left-foot ul li {
+            margin:0;
+            padding:0 8px;
+            font-size:8px;
+            color:black;
+        }
+        #mobile-left-foot a {
+            color:black;
+        }
+        #myNavbar {
+            display:flex;
+            
+        }
+        #right-foot {
+            padding:0;
+            margin:0;
+            align-self: center;
+            float:right;
+
+        }
+        #product-image {
+            width:100%;
+        }
+        #product-image img {
+            width:100%;
+            height:auto;
+            border-style: solid;
+            border-width: thin;
+            border-color: grey;
+            padding:8px;
+        }
+        #add-product-container {
+            display:flex;
+            flex-direction: column;
+           
+        }
+        #brandname {
+            vertical-align: middle;
+            font-size: 16px;
+            color:black;
+        }
+        .carousel-caption h3 {
+            font-size: 28px;
+        }
+        .map {
+            width:50%;
+            height:Auto;
+        }
+        #googleMap {
+            width:100%;
+            height:150px;
+        }
+        /* JT's product page mobile */
+        .carousel-inner img {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            filter: none;
+        }
+            /* scroll-to-top btn */
+
+        }
+        .col-lg-3 img {
+            width: 70%;
+            align-self: center;
+        }
+    }
+
+    

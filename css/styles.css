@@ -1,0 +1,116 @@
+
+.desktop {
+    display: inline;
+}
+
+.desktop a {
+    display:inline;
+    align-self:center;
+}
+
+.desktop u,li:hover {
+    background-color: #818181;
+    color:black;
+}
+
+#add-product {
+    margin:8px 8px 8px 200px;
+}
+.logo img {
+    width:64px;
+    height:64px;
+    float:left;
+}
+
+.mobile {
+    display:none;
+}
+
+#slogo {
+    width:64px;
+    height:64px;
+    float:left;
+    align-self:center;
+    margin:8px 24px;
+}
+
+#plus {
+    float:left;
+    padding:8px;
+    align-self:center;
+    margin:8px 50px 8px 300px;
+}
+
+@media screen and (max-width: 700px) {
+    .desktop,.logo {
+        display:none;
+
+    }
+    .mobile {
+        display:flex;
+        align-self:center;
+        justify-content:space-between;
+        width:80%;
+    }
+
+    .mobile img {
+        width: 64px;
+        height:64px;
+    }
+}
+
+ /* Side Nav -Right */
+ .side_nav_right {
+    align-self:center;
+    padding-right: 24px;
+}
+
+.sidenav_right {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav_right a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav_right a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav_right .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 18px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav_right {padding-top: 15px;}
+    .sidenav_right a {font-size: 18px;}
+}
+
+/* Make the  carousel image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+/* Lina's codes for main page*/
+.jumbotron, .product-cards, .formsearch {
+    text-align: center;
+}

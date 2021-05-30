@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/templater.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- Bootstrap CSS -->
+    <title>Add new item form</title>
+  </head>
+  <header>
+       <!-- A white horizontal navbar that becomes vertical on small screens -->
+       <nav class="navbar navbar-expand-md bg-white navbar-white">
+        <div class="navbar-header">
+        
+          <a href="index.html">
+          <img src="images/night-coders-logo.gif" id="logo">
+          </a>
+          <a href="index.html" id="brandname">Night Coders</a>
+      </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <a class="partition">|</a>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <a class="partition">|</a>
+            <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+            <!--<li class="nav-item">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="product.html">Product<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-link"><a href="#">Page 1</a></li>
+                        <li class="nav-link"><a href="#">Page 2</a></li>
+                        <li class="nav-link"><a href="#">Page 3</a></li>
+                        <li class="nav-link"><a href="#">Page 4</a></li>
+                        <li class="nav-link"><a href="#">Page 5</a></li>
+                    </ul>
+                </li>
+            </li>-->
+            <a class="partition">|</a>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+            <a class="partition">|</a>
+            <li class="nav-item"><a class="nav-link" href="add-product.html">Add Product</a></li>
+          </ul>
+          <!--<ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>-->
+        
+      <div>
+        <a  id="blank-balance"></a>
+        <img src="images/blank-logo.gif" id="logo">
+     </div>
+     
+  </nav>
+  
+</header>
+  <body>  
+    <!-- Add Product Form Module Start -->
+    <div id="add-product">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-8">
+            <h1 class="display text-center">Product Upload Form</h1>
+            
+                
+            
+            <form onsubmit="event.preventDefault();validation()">
+                <div>
+                    <div class="form-group row">
+                            <label for="product_name" class="col-sm-3 col-form-label">Product Name *</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="pdt-name" placeholder="Enter Product Name"Required>
+                            </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="product_description" class="col-sm-3 col-form-label">Product Description</label>
+                        <div class="col-sm-9">
+                            <!--<input type="text" class="form-control" id="prod-desc" placeholder="Enter Product Description">-->
+                            <textarea name="paragraph_text" class="form-control" id="pdt-desc" placeholder="Enter Product Description" cols="50" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="product_brand" class="col-sm-3 col-form-label">Brand</label>
+                    <div class="col-sm-9">
+                        
+                        <select  class="form-control" id="pdt-brand" name="brands" placeholder="Enter Brand">
+                            <option value="adidas">adidas</option>
+                            <option value="asics">ASICS</option>
+                            <option value="brooks">Brooks</option>
+                            <option value="columbus">Columbus</option>
+                            <option value="converse">Converse</option>
+                            <option value="fila">Fila</option>
+                            <option value="li-ning">Li-Ning</option>
+                            <option value="lotto">Lotto</option>
+                            <option value="mizuno">Mizuno</option>
+                            <option value="new-balance">New Balance</option>
+                            <option value="newton">Newton</option>
+                            <option value="nike">Nike</option>
+                            <option value="puma">Puma</option>
+                            <option value="reebok">Reebok</option>
+                            <option value="saucony">Saucony</option>
+                            <option value="skechers">Skechers</option>
+                            <option value="under-armour">Under Armour</option>
+                            <option value="others">Others</option>
+                          </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="product_price" class="col-sm-3 col-form-label">Price* $</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" id="pdt-price" placeholder="X,XXX.XX"Required>
+                    </div>
+                </div>
+                <div class="display-5 " id="add-product-container">
+                    
+                    <div id="form-section">
+                        <div class="form-group row">
+                            
+                            <label for="product_price" class="col-sm-3 col-form-label">Image</label>
+                            <div class="col-sm-7">
+                                <input class="btn btn-light"  type="file" id="myFile" name="filename">
+                                <br/><br/>
+                                <button class="btn btn-secondary" type="button" onclick="load_image()">Upload Image</button>
+                            </div>
+                        </div>
+                        <div class="form-group row ">
+                            <label for="product_price" class="col-sm-3 col-form-label"></label>
+                            <div class="col-sm-7">
+                                <button class="btn btn-secondary" type="submit" id="up-load-btn">Publish Product</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="product-image">
+                        <br/>
+                        <image src="images/default_shoes.jpg" id="product-pic"></image>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add Product Form Module End  -->
+<!-- Product Listing Module Start -->
+<hr>
+<div class="product-listing" id="product-listing" >
+
+</div>
+<!-- Product Listing End -->
+
+<!-- The Modal Start -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h4 class="modal-title">Terms & Conditions</h4>
+        <button type="button" id="modal-close" class="close" data-dismiss="modal">&times;</button>
+    </div>
+<!-- Modal body -->
+<div class="modal-body" id="modal-tnc">
+  
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+<button type="button" id="modal-btn-close"  class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+<script src="js/tnc.js"></script>
+<!-- Model End -->
+    
+<script src="js/add-product.js"></script>
+    <!-- Desktop layout end -->
+  </body>
+  <footer>
+    <div class="flex-container" id="left-foot">
+        <div class="navbar navbar-expand-lg bg-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal" >Terms & Conditions</a>
+                </li>
+                <a style="align-self: center;">&#128095;</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex-container" id="mobile-left-foot">
+        <ul>
+            <li>
+                <a href="#">T&C</a>
+            </li>
+            <a>&#128095;</a>
+            <li>
+                <a href="#">FAQs</a>
+            </li>
+        </ul>
+    </div>
+    <div class="flex-container" id="right-foot">
+        <div class="container-footer">
+            <a href="#">
+            <img src="images/facebook-logo.gif" alt="facebook" width="32px" height="32px">
+            </a>
+        </div>
+        <div class="container-footer">
+            <a href="#">
+            <img src="images/instagram.gif" alt="instagram" width="32px" height="32px">
+            </a>
+        </div>
+        <div class="container-footer">
+            <a href="#">
+            <img src="images/twitter.gif" alt="twitter" width="32px" height="32px">
+            </a>
+        </div>
+        <div class="container-footer">
+            <a href="#">
+            <img src="images/youtube.gif" alt="youtube" width="32px" height="32px">
+            </a>
+        </div>
+    </div>
+</footer>
+</html>

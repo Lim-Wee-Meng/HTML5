@@ -1,0 +1,790 @@
+* { 
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    align-self: center;
+    color:black;
+ }
+
+.partition {
+    color:black;
+}
+
+.navbar-header {
+    align-self: center;
+
+}
+#atc-btn {
+    width: 150px;
+}
+
+.btn.btn-primary {
+    width:450px;
+}
+#brandname {
+    vertical-align: middle;
+    font-size: 32px;
+    color:black;
+}
+.col-lg-3 {
+    margin:10px 0;
+    height: fit-content;
+}
+.col-lg-3 p {
+    margin:0px;
+
+}
+.col-lg-3 h5 {
+    font-size: medium;
+}
+
+.col-lg-3 img {
+    width:80%;
+    height:200px;
+    align-self: center;
+}
+
+#blank-balance {
+    margin: 0 100px;
+}
+#navbar-header a {
+    color:black;
+    align-self:center;
+    vertical-align: middle;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-toggler.collapsed {
+        width:30%;
+        margin:64px;
+        padding:32px;
+}
+.navbar-toggler.mrt {
+    width: 30%;
+}
+
+.navbar-toggler-mrt {
+    width:40%;
+}
+#myNavbar {
+   display:flex;
+   justify-content:center;
+
+}
+#myNavbar a,li {
+    color:black;
+    font-size: small;
+    align-self:center;
+    text-decoration: none;
+}
+#collapsibleNavbar {
+    justify-content: center;
+}
+.nav-item:hover {
+    background-color: lightgrey;
+}
+
+#navbar-brand {
+    color:black;
+}
+#logo {
+    float:left;
+    width:64px;
+    height:64px;
+}
+
+.navbar {
+    display:flex;
+    align-self:center;
+ 
+}
+
+.hamburger {
+    display:none;
+}
+.title {
+    margin:0 0 0 24px;
+}
+#left-foot {
+    flex-direction: row;
+    color: black;
+    width: fit-content;
+    float:left;
+}
+
+.nav-item a {
+    color:black;
+}
+
+#right-foot {
+    display: inline-flex;
+    align-self: center;
+    flex-direction: row;
+    margin:8px;
+    width:fit-content;
+    float: right;
+}
+.product-title {
+    margin:24px;
+}
+#mobile-left-foot {
+    display:none;
+    flex-direction: row;
+    color: black;
+    width: fit-content;
+    float:left;
+}
+
+
+  /* Lina's codes for main page*/
+.jumbotron, .product-cards, .formsearch {
+    text-align: center;
+}
+
+ /* Add product page */
+.up-load-btn {
+    background-color: gray;
+} 
+
+.form-group {
+    padding:0px;
+    
+}
+
+.col-sm-7 {
+    margin:0 0 0 72px;
+}
+
+.col-sm-7 button {
+    margin: 16px 0;
+}
+
+#form-section {
+    padding:0px;
+}
+#product-image {
+    width:25%;
+    margin-left:100px;
+   margin-top:-25px;
+    
+}
+
+#product-image img {
+    width:100%;
+    height:auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: grey;
+    padding:8px;
+    
+}
+#products-cont {
+    width:100%;
+    height:800px;
+    overflow: scroll;
+}
+
+#add-product {
+    display:flex;
+    justify-self: center;
+    width:100%;
+    height:800px;
+    overflow: scroll;
+}
+
+ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Contact Us */
+.contact-first-container {
+    display: flex;
+    flex-direction: row;
+    padding:24px;
+}
+#page-name {
+    text-align: center;
+    padding: 24px;
+}
+
+#add-product-container {
+    display:flex;
+
+   
+}
+#flex-container2  {
+    margin:3px 24px;
+    padding:8px;
+    justify-content: center;
+    border: thin solid rgb(49, 49, 49);
+    
+}
+
+#flex-container3  {
+    margin:3px 24px;
+    padding:8px;
+    display:inline-block;
+    flex-direction: column;
+    border: thin solid rgb(49, 49, 49);
+    
+}
+
+#btn-sm {
+    background-color: gray;
+    border-color: lightgrey;
+}
+
+#atc-btn {
+    background-color: gray;
+    border-color: lightgrey;
+}
+
+#checkout_list {
+    display:inline-block;
+    flex-direction: row;
+}
+
+#checkout_list h4,p {
+    margin:8px;
+    padding:0;
+}
+#pay-btn{
+    position: fixed;
+    top:15%;
+    left:78%;
+}
+.cmp-accordion__button {
+    background-color: white;
+    border:none;
+    padding: 0;
+    margin:0;
+}
+.btn.btn-primary {
+    background-color: gray;
+    color: white;
+    border: none;
+    margin:8px;
+}
+/* relevant styles */
+.img__wrap {
+   
+    height: 80px;
+    width: 80px;
+}
+  
+.img__description {
+    background:white;
+    color: gray;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+#mrt-button {
+    width:450px;
+    Height:150px;
+    margin:8px;
+    background-color: gray;
+    color:white;
+    border-radius: 3px;
+    
+}
+
+#collapsiblemrt a {
+    font-size:x-large;
+}
+#collapsiblemrt p {
+    font-size:large;
+}
+.dropdown-toggle {
+    width: 300px;
+}
+.container.by-car {
+    display:flex;
+    flex-direction: row;
+  
+    justify-content:space-around;
+   
+}
+.container.by-mrt {
+    display:flex;
+
+    justify-content:space-around;
+    flex-direction: row;
+    padding:16px;
+}
+#sin-banner {
+    width:70%;
+    
+ 
+}
+.container.mrt-stations {
+    display:flex;
+    flex-direction:row;
+    
+    margin:0 32px;
+    padding:0;
+}
+
+.container.buses {
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    padding:0px;
+}
+#taxi {
+    margin:32px;
+    padding:32px;
+}
+.container.taxi {
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    padding:16px;
+}
+
+
+#creditcards {
+    Width: 200px;
+    height:250px;
+    position: fixed;
+    top:25%;
+    left:75%;
+}
+#contact-road {
+    width:32%;
+    margin:16px;
+}
+#route1, #route2, #route3, #route4 {
+    width: 100%;
+    font-size:small;
+    padding:8px;
+    
+}
+.contact-transport {
+    width:80px;
+    height:80px;
+}
+#creditcardsv {
+    display: none;
+}
+#total-count {
+   margin-left: 58%;
+}
+#total-count2 {
+    margin-left: 90%;
+ }
+
+#email-us a {
+    padding:8 px;
+}    
+
+#email-us {
+ 
+    margin-left: 10%;
+}
+#myFile::-webkit-file-upload-button {
+    background: gray;
+    color: white;
+    border-radius: 3px;
+
+}
+
+table th,td {
+    padding:16px;
+    text-align: center;
+}
+
+table td {
+    align-self:center;
+}
+#email-logo {
+    padding:0 0 0 24px;
+    width: 64px;
+    height:32px; 
+}
+#cart-list {
+    width:100%;
+    height:550px;
+    overflow: scroll;
+}
+#product-listing {
+    width:80%;
+    height:500px;
+    justify-content: center;
+    margin-left:10%;
+    margin-right: 10%;
+    overflow: scroll;
+}
+#product-listing table {
+    border: thin;
+    border-color: gray;
+}
+#product-listing img {
+    width:100px;
+    height:100px;
+    align-self: center;
+}
+#sel-item-tag {
+    display: flex;
+    flex-direction: row;
+    margin:16px;
+}
+.list-group-item {
+    display: flex;
+    width:20px;
+    margin:0;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#sel-item-img {
+    width:150px;
+    height:150px;
+    margin: 0px;
+}
+#sel-item-name {
+    width:200px;
+    margin: 0 8px;
+}
+#sel-item-desc {
+    width:200px;
+    margin: 0 8px;
+}
+#sel-item-brand {
+    width:100px;
+    margin: 0 8px;
+}
+#sel-item-price {
+    width:100px;
+    margin: 0 8px;
+}
+#del-btn {
+    float:right;
+    margin:0px 0;
+    margin-top: -100px;
+}
+
+.epay-logo {
+    width:50px;
+    height:50px;
+}
+
+.cc-number,.cc-cardholder,.cc-exp,.cc-cvc  {
+    float:right;
+    width:60%;
+}
+
+.pay-box {
+    display:flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding:16px 0;
+    border-radius: 5px;
+}
+
+.btn.btn-submit {
+    background-color: darkgrey;
+    color:white;
+    border-radius: 3px;
+}
+.form-control {
+    width:60px;
+    margin: 0 8px;
+}
+#direction th,td {
+    font-size:12px;
+    padding:8px;
+}
+#modal-epay {
+    width:100%;
+    height:300px;
+    overflow: scroll;
+}
+
+#modal-epay p {
+    font-size: x-small;
+}
+#modal-tnc {
+    width:100%;
+    height:300px;
+    overflow: scroll;
+}
+
+#modal-tnc p {
+    font-size: x-small;
+}
+
+#tp-map {
+    width:50%;
+    
+}
+#faq {
+    padding:16px;
+}
+
+#faq-img {
+    width:50%;
+}
+.map {
+    width:45%;
+    height:Auto;
+}
+#googleMap {
+    position:absolute;
+    width:40%;
+    height:250px;
+    float:right;
+}
+
+#info-box {
+    padding:32px;
+}
+.container4 {
+    display:flex;
+    flex-direction: row;
+}
+
+#shoe-table-women,#shoe-table-men {
+    width:100%;
+    margin:16px;
+}
+#cart-status {
+    position:relative;
+    left: 92%;
+    margin:8px;
+    
+}
+#email-logo {
+    float:left;
+}
+#train {
+    width:500px;
+    height:50px;
+   margin:100px 8px;
+}
+#send-logo {
+    float:right;
+   
+}
+
+  #email-us {
+      width:80%;
+      justify-content: center;
+}
+  #cart-status img {
+    width:32px;
+    height:32px;
+}
+  #firstline {
+    width:80%;
+    margin: 16px 10%;
+}
+  .fa_custom {
+    color: #0099CC
+}
+  #cart-list {
+      border: slategray;
+      border-style: solid;
+      border-width: thin;
+}
+  @media screen and (max-width: 700px) {
+
+        #logo {
+            width:32px;
+            height:32px;
+        }
+        .btn.btn-primary {
+            width:300px;
+        }
+        .title h1 {
+            display:block;
+        }
+        .pdt-desc {
+            display:none;
+        }
+        
+        .hamburger {
+            display:block;
+           
+        }
+        #mobile-left-foot {
+            display:inline-flex;
+            float:right;
+            vertical-align: center;
+            
+        }     
+        #mrt-button {
+            width:300px;
+            Height:100px;
+            margin:40px;
+            background-color: gray;
+            color:white;
+            border-radius: 3px;
+            
+        }
+        #product-image {
+            width:25%;
+            margin-left:-8px;
+            
+        }
+        
+        #product-image img {
+            width:100%;
+            height:auto;
+            border-style: solid;
+            border-width: thin;
+            border-color: grey;
+            padding:8px;
+            
+        }
+        .partition,#left-foot {
+            display:none;
+        }
+        #right-foot img {
+            width:16px;
+            height:16px;
+        }
+        .nav-item a {
+            font-size: xx-small;
+            color:black;
+        }
+     
+        #mobile-left-foot {
+            display:inline;
+            flex-direction: row;
+            color: black;
+            width: fit-content;
+            float:left;
+        }
+        #bus-info {
+            padding:16px;
+        }
+        #mobile-left-foot ul {
+            list-style: none;
+            padding:0;
+            margin:0;
+            display: flex;
+            float:left;
+        }
+
+        #mobile-left-foot ul li {
+            margin:0;
+            padding:0 8px;
+            font-size:8px;
+            color:black;
+        }
+        #mobile-left-foot a {
+            color:black;
+        }
+        #myNavbar {
+            display:flex;
+            
+        }
+        #right-foot {
+            padding:0;
+            margin:0;
+            align-self: center;
+            float:right;
+
+        }
+        #product-image {
+            width:100%;
+            height:250px;
+        }
+        #product-image img {
+            width:100%;
+            height:auto;
+            border-style: solid;
+            border-width: thin;
+            border-color: grey;
+            padding:8px;
+        }
+        #add-product-container {
+            display:flex;
+            flex-direction: column;
+           
+        }
+        .contact-transport {
+            width:80px;
+            align-self: center;
+            
+        }
+        .map {
+            width:100%;
+            height:Auto;
+        }
+        #googleMap {
+            position:relative;
+            width:100%;
+            height:auto;
+            
+        }
+        .container.by-car {
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            margin-left:0;
+        }
+        .container.by-mrt {
+            display:flex;
+            flex-direction: column;
+            margin-left:0;
+        }
+        .container.mrt-stations {
+            display:flex;
+            flex-direction: column;
+        }
+
+        #train {
+            display: none;
+        }
+        .container.buses {
+            display:flex;
+            flex-direction: column;
+            margin:0;
+        }
+        #contact-road {
+            width:90%;
+            margin:16px;
+        }
+
+        #sin-banner {
+            width:90%;
+            height:100px;
+         
+        }
+        #creditcardsv {
+            display: block;
+            Width: 80px;
+            height:400px;
+            position: fixed;
+            top:25%;
+            left:80%;
+        }
+        
+        #creditcards {
+            display: none;
+        }
+        #brandname {
+            vertical-align: middle;
+            font-size: 16px;
+            color:black;
+        }
+        
+    }
+
+    
